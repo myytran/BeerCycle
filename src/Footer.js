@@ -3,15 +3,19 @@ import {Link} from 'react-scroll'
 
 function Footer(props) {
     return (
-        <div className="header-container">
-            <h3>Footer</h3>
-            {props.footerLinks.map((footerLink) => {
-                return (
-                    <Link spy={true} smooth={true} to={footerLink.id} style={{margin: 10}}>{footerLink.text}</Link>
-                )
-            })}
-        </div>
+        <footer className="footer">
+            <nav>
+                <ul class="footer__links">
+                    {props.footerLinks.map((footerLink) => {
+                    return (
+                        <Link className="footer__link" spy={true} smooth={true} to={footerLink.id} style={{margin: 10}}>{footerLink.text}</Link>
+                    )
+                    })}
+                </ul>
+             </nav>
+        </footer>
     );
 }
 
 export default Footer;
+

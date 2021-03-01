@@ -39,3 +39,21 @@ body {
     color: white;
     border-bottom: 5px solid white; 
 }
+
+.footer {
+  background: black;
+  padding: 19px;
+  margin-top: 48px;
+}
+
+.footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer__link {
+  color: white;
+  margin: 0 16px;
+}
