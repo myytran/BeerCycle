@@ -5,12 +5,18 @@ import Footer from './Footer';
 
 function App() {
   const [beers, setBeers] = useState(null);
+
   const links = [
     { id: "carousel", text: "Carousel" },
     { id: "breweries", text: "Breweries" },
     { id: "beer-types", text: "Types of Beer" },
     { id: "footer", text: "Footer"},
+  ];
+   const footerLinks = [
+    { id: "support", text: "Support"},
+    { id: "terms", text: "Terms of Use"}
   ]
+
  // fetch data from Beers API
  const fetchData = () => {
     fetch('https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_gt=6')
@@ -34,15 +40,22 @@ useEffect(() => {
   fetchData();
 }, []);
 
+
   return (
-    
     <div className="main-app">
           <Header links={links} />
         <div className="carousel-container" id="carousel" activeClass="active">
           <h2>Carousel</h2>
-          {beers.map((beer) => {
+          {beers && beers.map((beer) => {
             return (
-              <div>{beer.name}</div>
+              <div>
+                {beer.name}
+                {beer.abv}
+                {beer.img}
+                {beer.tagline}
+                {beer.description}
+              </div>
+              
             )
           })}
         </div>
@@ -58,7 +71,9 @@ useEffect(() => {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             </span>
         </div>
-      <Footer links={links} />
+        <div id="footer">
+          <Footer footerLinks={footerLinks} />
+        </div>
     </div>
   );
 }
