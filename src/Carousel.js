@@ -1,9 +1,10 @@
 import React from 'react';
 
 function Carousel(props) {
+    const allBeers = [...props.beers];
     return (
         <div>
-            {beers.map(beer => {
+            {allBeers.map((beer) => {
                 <div>{beer.name}</div>
             })}
         </div>

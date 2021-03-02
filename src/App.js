@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './Header';
 import Footer from './Footer';
+import Carousel from './Carousel';
 
 function App() {
   const [beers, setBeers] = useState(null);
@@ -46,18 +47,7 @@ useEffect(() => {
           <Header links={links} />
         <div className="carousel-container" id="carousel" activeClass="active">
           <h2>Carousel</h2>
-          {beers && beers.map((beer) => {
-            return (
-              <div>
-                {beer.name}
-                {beer.abv}
-                {beer.img}
-                {beer.tagline}
-                {beer.description}
-              </div>
-              
-            )
-          })}
+          {beers && <Carousel beers={beers} />}
         </div>
         <div id="breweries" className="breweries-container">
           <h2>Breweries</h2>
