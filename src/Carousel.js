@@ -3,9 +3,17 @@ import React from 'react';
 function Carousel(props) {
     const allBeers = [...props.beers];
     return (
-        <div>
+        <div className="carousel-container">
             {allBeers.map((beer) => {
-                <div>{beer.name}</div>
+                return (
+                    <div>
+                        {beer.name}
+                        {beer.abv}
+                        {beer.img_url}
+                        {beer.tagline}
+                        {beer.description}
+                    </div>
+                )
             })}
         </div>
     );

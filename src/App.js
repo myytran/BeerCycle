@@ -3,6 +3,7 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Carousel from './Carousel';
+import LandingImg from './LandingImg';
 
 function App() {
   const [beers, setBeers] = useState(null);
@@ -45,6 +46,7 @@ useEffect(() => {
   return (
     <div className="main-app">
           <Header links={links} />
+          <LandingImg />
         <div className="carousel-container" id="carousel" activeClass="active">
           <h2>Carousel</h2>
           {beers && <Carousel beers={beers} />}
