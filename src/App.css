@@ -28,6 +28,7 @@ body {
 .main-nav__items {
   margin: 0;
   padding: 0;
+  margin-left: 1280px;
 }
 .main-nav__item {
   display: inline-block;
@@ -38,6 +39,13 @@ body {
 .main-nav__item a:active {
     color: white;
     border-bottom: 5px solid white; 
+}
+
+.carousel-container,
+.breweries-container, 
+.beer-types-container {
+  background: rgb(247, 217, 178);
+  margin: 0 16px;
 }
 
 .footer {
