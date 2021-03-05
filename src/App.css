@@ -28,7 +28,7 @@ body {
 .main-nav__items {
   margin: 0;
   padding: 0;
-  margin-left: 1280px;
+  /* margin-left: 1280px; */
 }
 .main-nav__item {
   display: inline-block;
@@ -60,7 +60,7 @@ body {
 .breweries-container, 
 .beer-types-container {
   background: rgb(247, 217, 178);
-  margin: 0 16px;
+  margin: 16px;
 }
 
 
