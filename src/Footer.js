@@ -8,7 +8,7 @@ function Footer(props) {
                 <ul class="footer__links">
                     {props.footerLinks.map((footerLink) => {
                     return (
-                        <Link className="footer__link" spy={true} smooth={true} to={footerLink.id} style={{margin: 10}}>{footerLink.text}</Link>
+                        <Link key={footerLink.id} className="footer__link" spy={true} smooth={true} to={footerLink.id} style={{margin: 10}}>{footerLink.text}</Link>
                     )
                     })}
                 </ul>

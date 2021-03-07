@@ -13,7 +13,8 @@ function Header(props) {
             <ul className="main-nav__items">
                 {props.links.map((link) => {
                     return (
-                        <li className="main-nav__item"><Link spy={true} smooth={true} to={link.id}>{link.text}</Link></li>
+                        <li className="main-nav__item" key={link.id}>
+                            <Link spy={true} smooth={true} to={link.id}>{link.text}</Link></li>
                     )
                 })}
             </ul>

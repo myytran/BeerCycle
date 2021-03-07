@@ -3,7 +3,7 @@ import React from 'react';
 function Beer({ beer }) {
     return (
         <div>
-            {beer.name}
+            {beer}
         </div>
     );
 }

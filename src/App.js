@@ -12,7 +12,6 @@ function App() {
     { id: "carousel", text: "Carousel" },
     { id: "breweries", text: "Breweries" },
     { id: "beer-types", text: "Types of Beer" },
-    { id: "footer", text: "Footer"},
   ];
    const footerLinks = [
     { id: "support", text: "Support"},
@@ -54,13 +53,13 @@ useEffect(() => {
         <div id="breweries" className="breweries-container">
           <h2>Breweries</h2>
             <span>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </span>
         </div>
         <div id="beer-types" className="beer-types-container">
           <h2>Types of Beer</h2>
             <span>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </span>
         </div>
         <div id="footer">
