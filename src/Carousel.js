@@ -9,7 +9,7 @@ function Carousel(props) {
             {allBeers.map((beer) => {
                 return (
                     <div key={beer.name}>
-                        <Beer  />
+                        <Beer beer={beer} />
                     </div>
                 )
             })}
