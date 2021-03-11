@@ -5,14 +5,9 @@ function Carousel(props) {
     const allBeers = [...props.beers];
   
     return (
-        <div className="carousel-container">
-            {allBeers.map((beer) => {
-                return (
-                    <div key={beer.name}>
-                        <Beer beer={beer} />
-                    </div>
-                )
-            })}
+        <div>
+            <h2>Carousel</h2>
+            {allBeers.map((beer) => <Beer key={beer.name} beer={beer} />)}
         </div>
     );
 }

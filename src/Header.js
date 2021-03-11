@@ -5,9 +5,9 @@ function Header(props) {
     return (
         <div className="main-header">
             <div>
-                <a href class="main-header__brand">
+                <span className="main-header__brand">
                 Beer Cycle
-                </a>
+                </span>
             </div>
             <nav className="main-nav">
             <ul className="main-nav__items">

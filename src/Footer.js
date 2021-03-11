@@ -5,7 +5,7 @@ function Footer(props) {
     return (
         <footer className="footer">
             <nav>
-                <ul class="footer__links">
+                <ul className="footer__links">
                     {props.footerLinks.map((footerLink) => {
                     return (
                         <Link key={footerLink.id} className="footer__link" spy={true} smooth={true} to={footerLink.id} style={{margin: 10}}>{footerLink.text}</Link>

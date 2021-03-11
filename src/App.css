@@ -11,6 +11,7 @@ body {
   background-color: peru;
   padding: 8px 16px;
   position: fixed;
+  z-index: 1;
 }
 .main-header > div {
   display: inline-block;
@@ -43,28 +44,50 @@ body {
 }
 
 .landing-img {
-  background: url("./images/glutenfreebeer_social.jpg")left 10% bottom 20%/cover no-repeat border-box;;
+  background: url("./images/BeerCycle.png")left 10% bottom 30%/cover no-repeat border-box;
   width: 100%;
-  height: 600px;
-  overflow: hidden;
+  height: 750px;
+  padding: 10px;
+  position: relative;
 }
 
 .landing-img h2 {
-    display: inline;
+    position: absolute;
     color: white;
     background-color: peru;
-    position: relative;
-    bottom: -90%;
-    left: 65%;
-    padding: 5px;
+    bottom: 5%;
+    left: 60%;
+    display: inline-block;
 }
 
-.carousel-container,
+.carousel-container {
+  background: rgb(rgb(241, 190, 142));
+  margin: 20px;
+  /* padding: 8px 16px; */
+}
+
+.carousel-container h2 {
+  color: peru;
+  text-align: center;
+  padding: 8px;
+}
+
+.modal-beer-container {
+  margin: 10px;
+  font-weight: 200;
+  display: inline-block;
+  padding: 5px;
+  width: 250px;
+  background-color: red;
+}
+
 .breweries-container, 
 .beer-types-container {
   background: rgb(247, 217, 178);
   margin: 16px;
 }
+
+
 
 
 .footer {
