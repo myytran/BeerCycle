@@ -3,7 +3,7 @@ import React from 'react';
 function Beer({ beer }) {
     
     return (
-            <div className="modal-beer-container">
+            <div className="beer-container">
                     <h4>Name: {beer.name}</h4>
                     <p>ABV: {beer.abv}</p>
                     <p>Date Brewed: {beer.dateBrewed}</p>
