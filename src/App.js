@@ -46,7 +46,6 @@ useEffect(() => {
       <Header links={links} />
       <LandingImg />
         <div id="carousel">
-          <h2>Carousel</h2>
           {beers && <Carousel beers={beers} />}
         </div>
         <div id="breweries" className="breweries-container">

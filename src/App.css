@@ -60,6 +60,27 @@ body {
     display: inline-block;
 }
 
+.carousel h2 {
+  text-align: center;
+}
+
+.carousel button {
+  display: inline-block;
+  margin: 10px;
+}
+
+.carousel span {
+  display: inline;
+  text-align: right;
+  padding: 10px;
+}
+
+.abv-search {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px;
+}
+
 .carousel-container {
   padding: 8px;
   margin: 10px;
@@ -70,12 +91,7 @@ body {
   justify-content: center;
 }
 
-#carousel h2 {
-  text-align: center;
-}
-
 .beer-container {
-  display: inline-block;
   font-weight: 200;
   border-right: 1px solid black;
   border-left: 1px solid black;
